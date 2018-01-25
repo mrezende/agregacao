@@ -15,6 +15,6 @@ class Aluno
     $this->nome = $nome;
     $this->dataDeNascimento = $dataDeNascimento;
     self::$contador++;
-    echo "Contador: " . Aluno::$contador . PHP_EOL;
+    echo "Número: " . Aluno::$contador . PHP_EOL;
   }
 }
