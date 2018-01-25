@@ -1,10 +1,11 @@
 <?php
 declare(strict_types = 1);
 require 'lib/Carbon.php';
+use Carbon\Carbon;
 require 'Turma.php';
 require 'Aluno.php';
 
-use Carbon\Carbon;
+
 
 $turma = new Turma();
 $turma->periodo = "Manhã";
@@ -12,7 +13,17 @@ $turma->serie = 5;
 $turma->sigla = "B";
 $turma->tipoDeEnsino = "Fundamental";
 
-$aluno = new Aluno("","");
+
+
+$aluno = new Aluno("Rafael", Carbon::createFromDate(1984, 10, 30));
+
+
+$aluno = new Aluno("Jonas", Carbon::createFromDate(1984, 10, 30));
+
+
+$aluno = new Aluno("Gustavo", Carbon::createFromDate(1984, 10, 30));
+
+
 
 
 
